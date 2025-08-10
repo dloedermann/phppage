@@ -1,0 +1,14 @@
+.hero{
+    background-image: url("./img/mmorpggaming.jpg");
+    height: 20em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:rgb(40, 241, 208)
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
