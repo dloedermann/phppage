@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+
+    .cube, 
+    .circle {        
+        width: 6.25em;
+        height: 6.25em;                
+    }
+
+    .item-container {
+        display: flex;
+        gap: 1.25em;
+        animation: rotateContainer 2s infinite;
+
+        .cube{
+        background-color: rgb(98, 175, 152);
+        border-radius: 17%;
+        animation: rotateCube 2s infinite;
+        }
+
+        .circle{
+        background-color: rgb(216, 146, 146);
+        border-radius: 100%;
+        }
+    }
+
+}
+
+@keyframes rotateContainer {
+    0% {
+        transform: rotate(0deg);
+    }
+    40% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    80% {
+        transform: rotate(0deg);
+    } 
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotateCube {
+    to{
+        transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(360deg);
+    }
+    
+}
